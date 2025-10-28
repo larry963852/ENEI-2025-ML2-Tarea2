@@ -65,9 +65,9 @@ Environment: Python, numpy, pandas, matplotlib, scikit-learn, pytorch.
    The top $r$ eigenfaces span an $r$-dimensional **face space**.
    Represent an image vector $z$ in this space as:
    
-   \begin{gather*}
+$$
    f = [v_1, v_2, \ldots, v_r]^T z
-   \end{gather*}
+$$
 
    Write a function to compute:
 
@@ -89,15 +89,15 @@ Environment: Python, numpy, pandas, matplotlib, scikit-learn, pytorch.
 
    Reconstruct approximations $ X' $ from the features by multiplying:
 
-   \begin{gather*}
-   X' = F \cdot \text{(top } r \text{ eigenfaces)}
-   \end{gather*}
+$$
+X' = F \cdot \text{(top } r \text{ eigenfaces)}
+$$
 
    Compute and plot the average Frobenius distance:
 
-   \begin{gather*}
+$$
    d(X, X') = \sqrt{\text{tr}((X - X')^T (X - X'))}
-   \end{gather*}
+$$
 
    for $ r = 1, 2, \ldots, 200 $.
 
